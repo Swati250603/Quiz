@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Quiz from './Component/Quiz';
+import Timer from './Component/Timer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='p-6 bg-white rounded shadow-md w-full max-w-xl mx-auto relative'>
+        <div className="flex justify-end mb-4">
+        <Timer/>
+        <Quiz/>
+        </div>
+      </div>
     </div>
   );
 }
